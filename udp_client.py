@@ -10,7 +10,6 @@ def udp_send_data(ip,port,data_list):
     seq_id = 1
 
     for x in data_list:
-        print(x)
         send_data = pickle.dumps(x)
         m = hashlib.md5()
         m.update(send_data)
